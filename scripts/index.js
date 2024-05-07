@@ -3,8 +3,7 @@
 const links = document.querySelectorAll('.main-navbar a');
 
 links.forEach(link => {
-    link.addEventListener("click", function(e) {
-        e.preventDefault();
+    link.addEventListener("click", function() {
         links.forEach(link => {
             link.classList.remove('active');    
         })
@@ -12,7 +11,7 @@ links.forEach(link => {
     })
 })
 
-// Burger Menu
+// Burger Menu added class for opening
 
 const editNav = () => {
     let x = document.getElementById("myTopnav");
